@@ -1,0 +1,278 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+html,body{
+    background-color: #FFFFFF !important;
+    overflow-x: hidden !important;
+}
+
+/* Navigation Start */
+.navbar{
+    width: 100%;
+    padding: 20px 0px !important;
+}
+.navbar-brand img{
+    width: 140px;
+    object-fit: cover !important;
+}
+.navbar-nav {
+    gap: 30px !important;
+}
+.nav-link {
+    font-size: 18px !important;
+    font-weight: 500 !important;
+    color: #747474 !important;
+}
+
+/* Navigation End */
+
+
+/* Hero Section Start */
+.hero-section{
+    width: 100%;
+    position: relative;
+}
+.hero-section::before{
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    left: 0;
+    bottom:-50px;
+    background: url(./Images/bg-2.png) no-repeat;
+    background-size: contain;
+}
+ .hero-slider{
+    position: relative;
+    width: 100%;
+    height: 680px;
+}
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+.hero-text h1{
+    font-size: 40px;
+    font-weight: 500;
+    color: #000;
+    margin-bottom: 25px;
+}
+.hero-text p{
+    font-size: 17px;
+    color: #747474;
+    margin-bottom: 50px;
+    font-weight: 300;
+}
+.hero-text::after{
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 500px;
+    top: 50%;
+    left: 120%;
+    transform: translateY(-50%);
+    background: url(./Images/bg-1.png) no-repeat;
+    background-size:85px ;
+    
+}
+.buy-btn{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 400;
+    color: #FFF;
+    background-color: #000;
+    padding: 14px 36px;
+    border-radius: 10px;
+}
+.slider-img {
+    width:95%;
+    object-fit: cover;
+    margin-left: auto;
+    display: block;
+}
+
+  .swiper-pagination-bullet {
+    width: 12px !important;
+    height: 9px !important;
+    border-radius: 40px !important;
+    background:#CECECE!important;
+    opacity: 0.8 !important;
+}
+.swiper-pagination-bullet-active {
+    width: 35px !important;
+    background:linear-gradient(to right, #FFB527 10%, #FFD019) !important;
+    opacity: 1 !important;
+} 
+
+/* Media Query Start */
+@media screen and (max-width:1400px) {
+    .hero-text::after{
+        left:122%;
+        transform: translateY(-45%);
+        background-size:75px ;
+    }
+    .hero-slider{
+        height: 600px;
+    }
+    .hero-section::before{
+        margin-bottom: -60px;
+    }
+}
+@media screen and (max-width:1200px) {
+    .hero-text::after{
+        transform: translateY(-40%);
+        background-size:65px ;
+    }
+    .hero-slider{
+        height: 500px;
+    }
+    .hero-section::before{
+        margin-bottom: -60px;
+        width: 180px;
+        height: 180px;
+    }
+}
+/* Media Query Start */
+/* Hero Section End */
+
+
+/* buy-phone-section Start */
+.buy-phone-section{
+    width: 100%;
+    padding: 130px 0px 80px 0px;
+}
+.buy-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+.buy-head h2{
+    font-size: 30px;
+    color: #1a1a1a;
+}
+.buy-head a{
+    text-decoration: none;
+    color: #FDBA23;
+    font-size: 18px;
+    font-weight: 500;
+}
+.buy-card img{
+    object-fit: contain;
+    width: 100%;
+    margin: auto;
+}
+.buy-card h4{
+    font-size: 22px;
+    color: #1a1a1a;
+    margin:30px 0px 15px 0px;
+    font-weight: 500;
+}
+.buy-card p{
+    font-size: 17px;
+    color: #747474;
+    margin-bottom: 40px;
+    font-weight: 300;
+}
+.buy-card h5{
+    font-size: 25px;
+    color: #1a1a1a;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.buy-phone-btn{
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 400;
+    color: #FFF;
+    background-color: #000;
+    padding: 14px 10px;
+    border-radius: 10px;
+    width: 55% !important;
+    margin: 0 auto;
+}
+
+/* Media Query Start */
+@media screen and (max-width:1200px) {
+    .buy-card{
+        height: 580px !important;
+    }
+}
+
+/* Media Query End */
+/* buy-phone-section End */
+
+
+/* Buy Laptop Section Start*/
+.buy-laptop-section{
+    width: 100%;
+    padding: 40px 0px 100px 0px;
+}
+/* Buy Laptop Section End*/
+
+
+
+/* categories-section Start */
+.categories-section {
+    width: 100%;
+    padding:50px 0px 100px 0px;
+}
+.categories-section h1{
+    text-align: center;
+    font-size: 34px;
+    font-weight: 500;
+    color: #000;
+    margin-bottom: 100px;
+    position: relative;
+}
+.categories-section h1::after{
+    content: "";
+    width: 120px;
+    height: 6px;
+    border-radius: 20px;
+    background: linear-gradient(to left, #FFB527 20%, #FFD019);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -20px;
+}
+.products,.product {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+.product{
+    flex-direction: column;
+}
+.products .card{
+    padding:50px 60px  !important;
+   
+}
+.products .card img{
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+.products .card h5{
+    font-size: 20px;
+    color: #000;
+    font-weight: 600;
+}
+.products .bag-card{
+    border-radius: 1px 22px 1px 22px !important;
+}
+.product .card{
+    border-radius: 22px 1px 22px 1px !important;
+}
+.product .card:nth-child(2) h5{
+    margin-top: -20px;
+}
+.cart-image img{
+    width: 100%;
+    object-fit: cover;
+}
+/* categories-section End */
